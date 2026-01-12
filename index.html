@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook Misión 7 : La Magia del Cubo AR</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Playbook-S2-TM7</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 7 : La Magia del Cubo AR</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 7 - 2do Secundaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
             </div>
             <div class="theme-toggle">
                 <i class="fas fa-sun"></i>
@@ -28,7 +27,6 @@
             </div>
         </div>
     </header>
-
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
@@ -40,251 +38,404 @@
                 <li><a href="#activity-4">4</a></li>
                 <li><a href="#activity-5">5</a></li>
             </ul>
-
-            <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-            </div>
         </aside>
-
         <main class="content">
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
-
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
             <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Misión Gnius</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos:</strong>
-                                    <ul>
-                                        <li>Introducir a los estudiantes a los principios de Realidad Aumentada (AR) en Delightex.</li>
-                                        <li>Enseñar a utilizar el Merge Cube como dispositivo de anclaje para contenido digital.</li>
-                                        <li>Explicar conceptualmente el principio de SLAM como la tecnología de IA que permite la fusión de mundos.</li>
-                                    </ul>
-                                    <strong>Secuencia de Clase:</strong>
-                                    <ul>
-                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Contexto de la misión de Realidad Aumentada.</li>
-                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Presentación del Desafío:</strong> Introducción al concepto de AR y SLAM.</li>
-                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Adquisición conceptual de SLAM y guía al tutorial de AR.</li>
-                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Aplicación práctica con el tutorial y el mini-proyecto del "Primer Objeto Aumentado".</li>
-                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Retroalimentación estructurada entre pares sobre la experiencia de ver su creación en AR.</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <ul>
-                                        <li>Una escena de Delightex configurada para AR, donde un objeto 3D principal de una creación anterior aparece correctamente anclado y visible sobre un Merge Cube físico.</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                        <li>Proyector o pantalla interactiva.</li>
-                                        <li>Conexión a internet estable.</li>
-                                        <li>Acceso a la plataforma Delightex para cada estudiante.</li>
-                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
-                                        <li>1 Merge Cube por cada 2-3 estudiantes.</li>
-                                        <li>1 dispositivo móvil (teléfono o tablet) por cada 2-3 estudiantes para visualizar la AR.</li>
-                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
-                                    </ul>
-                                    <strong>Preparación Previa para ESTA Sesión:</strong>
-                                    <ol>
-                                        <li><strong>Revisión de Misión (Interna):</strong>
-                                            <ul>
-                                                <li>Confirmar que el tutorial '6- Creating for the merge cube' está activo en Delightex.</li>
-                                                <li>Verificar que los dispositivos móviles tienen la app o navegador necesarios para la AR de Delightex.</li>
-                                                <li>Tener los Merge Cubes listos para distribución. Puedes imprimir el Merge Cube con el siguiente enlace: https://mergecube.com/paper-pdf </li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Familiarización:</strong> Repasar la analogía de SLAM (Mapping + Localization) para poder explicarla con claridad.</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> usar Delightex para crear experiencias de Realidad Aumentada con el Merge Cube para controlar el anclaje del contenido y comprender los principios de SLAM y visión por computadora.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Explícame qué es la Realidad Aumentada y por qué el Merge Cube permite “anclar” contenido digital en el mundo físico. Guíame para entender cómo el sistema reconoce la forma del cubo y mantiene estable el contenido, introduciendo de forma conceptual qué es SLAM y por qué es clave para que la AR funcione correctamente. Relaciona esto con el tutorial '6- Creating for the merge cube' y ayúdame a identificar qué habilidades técnicas debo dominar para crear experiencias AR básicas en Delightex.</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Realidad Aumentada y SLAM: Es la tecnología que permite poner objetos digitales sobre el mundo real y el sistema que ayuda a la cámara a entender dónde están para que no se muevan.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar Delightex para colocar y fijar objetos digitales sobre un cubo especial.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes ángulos de luz y distancias para entender cómo se mantiene el anclaje.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Merge Cube (físico o imprimible) (1 por cada 2 estudiantes)</label>
+                        <label><input type="checkbox"> Acceso a Delightex (https://edu.delightex.com/Auth)</label>
+                        <label><input type="checkbox"> Cámara web o dispositivo con cámara activa</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa creación de entornos 3D y AR en Delightex</label>
+                        <label><input type="checkbox"> 📋 Para comenzar: Entra a Delightex -> Crea un nuevo proyecto -> Selecciona la plantilla de Merge Cube</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Si usas un cubo físico, no tapes sus dibujos con los dedos; si es digital, evita reflejos en la pantalla.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre Realidad Aumentada y el sistema SLAM (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si la cámara no detecta el cubo:</strong> Asegúrate de que haya suficiente luz y que el lente de la cámara esté limpio. No cubras los patrones del cubo con tus dedos.</li><li><strong>Si el contenido digital "tiembla":</strong> Intenta alejarte un poco del cubo o mejorar la iluminación. El sistema SLAM necesita ver puntos de referencia claros.</li><li><strong>Si hay errores en el código o la escena:</strong> Recuerda a los estudiantes que XOLO puede ayudar a depurar. Pídeles que describan el problema a XOLO.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
             <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo de I.A. y Contexto de Misión ⏰ 3 minutos</h2>
-                <p>Establecer un ambiente de trabajo profesional, contextualizar la misión del día y guiar la activación individualizada de Xolo, el copiloto de IA.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Contexto ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta la misión: romper la barrera de la pantalla.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Desarrolladores. Hasta ahora, sus mundos han vivido confinados a la pantalla. Hoy, rompemos esa barrera. Bienvenidos a la Realidad Aumentada. Aprenderán a tomar sus creaciones digitales y anclarlas en el mundo físico, haciendo que lo virtual y lo real coexistan. La herramienta para este puente será el Merge Cube."</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
-                      <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Activación de IA y Perfil ⏰ 2 minutos</h3>
-                            <p>El facilitador da la instrucción explícita a los alumnos para que saluden a Xolo en el chat.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Como es habitual, inicien activando su sesión con Xolo. Usen el chat con la estructura completa para la Misión 7."</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "¡Hoy vamos a atrapar hologramas en la palma de su mano!".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre Realidad Aumentada y anclaje espacial.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A crear mundos digitales que se anclan a la realidad para que parezcan objetos mágicos.</p>
+                        <p><strong>Aplicación real:</strong> Los ingenieros y arquitectos en la construcción usan esta tecnología para ver cómo quedará un edificio antes de poner el primer ladrillo.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 2: A.I. GYM -->
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
-                <p>Clarificar las metas de aprendizaje y presentar la Realidad Aumentada como una tecnología potenciada por IA.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: El Desafío del Día ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 3) El facilitador introduce el concepto de AR y presenta el Merge Cube como el lienzo físico.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"La Realidad Aumentada es una de las tecnologías con mayor proyección. No se trata de reemplazar la realidad, sino de enriquecerla con información y experiencias digitales. Hoy, aprenderán los fundamentos técnicos para crear una experiencia en AR y, lo más importante, entenderán la 'magia' de la IA que lo hace posible. El Merge Cube será nuestro lienzo físico."</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Objetivo de Aprendizaje (I Can Statement) ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje concreto de la sesión.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo el Merge Cube sirve como punto de referencia para la cámara.</li>
+                            <li>Introduce el concepto de SLAM como el sistema que permite mapear el espacio.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a usar Delightex para explorar la Realidad Aumentada.</li>
+                            <li>Aprender sobre el anclaje espacial y SLAM.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Al finalizar esta sesión, podrán afirmar con total seguridad: <strong>'Yo sé cómo crear una experiencia básica de Realidad Aumentada usando el Merge Cube y puedo explicar el concepto de SLAM como la tecnología de IA que permite anclar objetos digitales en el mundo real.'</strong>"</p>
-                            </div>
-                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar Delightex para anclar contenido y entender el concepto de SLAM.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Hola a todos! Hoy vamos a entrar en una dimensión donde lo digital y lo físico se mezclan de forma asombrosa. Vamos a usar Delightex para crear Realidad Aumentada. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy sobre cómo funciona esta magia tecnológica y el famoso sistema SLAM. No necesitan escribir un prompt especial, solo abran su chat, salúdenlo y empiecen a platicar con él. Pregúntenle sobre el Merge Cube y cómo es que la computadora sabe dónde poner los objetos. ¡XOLO es el experto, así que no se queden con ninguna duda!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: A.I. GYM ⏰ 10 minutos</h2>
-                <p>Guiar a los estudiantes para que aprendan la técnica para crear experiencias AR y el concepto de SLAM.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Diálogo Conceptual con Xolo ⏰ 10 minutos</h3>
-                            <p>(Proyectar Diapositiva 5) El facilitador instruye a los estudiantes sobre cómo iniciar su diálogo de aprendizaje con Xolo.</p>
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los Merge Cubes conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique Realidad Aumentada.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar el Merge Cube.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Configurar el anclaje en Delightex y probar con el cubo real.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Ayúdame a idear una primera experiencia AR usando el Merge Cube en Delightex. Dame una vibe para el cubo (ej. “museo portátil”, “objeto mágico”, “laboratorio científico”) y guíame para decidir qué tipo de contenido aparecerá en el cubo cuando lo observe. Después indícame cómo estructurar el espacio AR para que el contenido esté bien anclado y sea fácil de explorar desde distintos ángulos."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Entramos al A.I. GYM. Su misión es entender cómo y por qué funciona la AR. Pregúntenle a Xolo: <strong>'Xolo, necesito dominar la creación para el Merge Cube en Delightex y entender la tecnología SLAM que lo hace posible.'</strong> Él les guiará al tutorial técnico '6- Creating for the merge cube' y les dará la explicación conceptual de SLAM. Es fundamental que presten atención a ambos aspectos."</p>
-                            </div>
-                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿El contenido aparece exactamente sobre el cubo como esperabas?</li>
+                            <li>¿Qué pasa si mueves el cubo muy rápido o lo tapas parcialmente con la mano?</li>
+                            <li>¿Funciona igual de bien si hay mucha luz vs. si hay poca luz en el salón?</li>
+                            <li>¿Cómo ayuda el anclaje espacial a que la experiencia se sienta real y no como un video flotando?</li>
+                            <li>Si el sistema SLAM fallara, ¿qué crees que pasaría con tu objeto digital en la pantalla?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear su propio objeto mágico! Vamos a usar el Brain Spark para idear un proyecto increíble que viva en la Realidad Aumentada. Imaginen que su cubo es un museo portátil, un objeto mágico o un laboratorio científico secreto. Sigan el flujo: hablen con XOLO para definir el VIBE de su proyecto, obtengan su GCS (Guía de Construcción Paso a Paso), y luego llévenlo a Delightex. Por ejemplo, podrían crear un pequeño sistema solar que gire en sus manos. Experimenten con las preguntas que ven en pantalla para ver qué tan estable es su creación bajo diferentes condiciones. Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar su escena AR. ¡Manos a la obra!</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con el anclaje básico. ¿Puedes enseñarme cómo hacer que mi Merge Cube active una animación diferente cuando lo giro?"</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
             <div class="activity-card" id="activity-4">
-                 <h2>⚡ Actividad 4: Brain Spark ⏰ 15 minutos</h2>
-                <p>Supervisar el workflow de completar el tutorial y la creación del primer objeto aumentado.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Ejecución del Tutorial ⏰ 7 minutos</h3>
-                            <p>(Proyectar Diapositiva 6) Los estudiantes siguen el tutorial de Delightex para configurar su primera escena AR.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Ahora, al Brain Spark. Tienen 7 minutos para completar la parte técnica: sigan las indicaciones del tutorial para configurar una escena para AR y visualizarla con su dispositivo móvil apuntando al Merge Cube. El objetivo es tener una conexión funcional entre el editor y el mundo real."</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Mi Primer Objeto Aumentado (Mini-Proyecto) ⏰ 8 minutos</h3>
-                            <p>(Proyectar Diapositiva 7) El facilitador guía a los estudiantes para que traigan una de sus propias creaciones al mundo real.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué elementos de anclaje funcionaron bien.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué elementos digitales se anclaron mejor a tu Merge Cube? ¿Qué te sorprendió del sistema SLAM?</p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">"Conexión establecida. Ahora, traigan su mundo al nuestro. Tomen una de las escenas que crearon anteriormente, elijan un objeto principal, y aíslenlo para que aparezca sobre su Merge Cube. Experimenten moviendo el cubo, gírenlo, acérquenlo. Observen cómo el objeto permanece anclado. Si aparece mal configurado, recuerden la diferencia: SLAM se encarga del anclaje, pero ustedes, como diseñadores, se encargan de la presentación ajustando la escala y rotación en el editor."</p>
-                            </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi Merge Cube mostró elementos digitales estables. Me sorprendió que el sistema SLAM detectara el movimiento tan rápido."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
             <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
-                <p>Moderar una fase de retroalimentación estructurada sobre la experiencia y el impacto emocional de la AR.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 8) El facilitador guía una breve reflexión individual sobre la experiencia de ver su creación en AR.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Tiempo. Reflexión individual. Piensen en una palabra que describa la sensación de ver su propia creación digital 'existir' en el mundo real, sobre la palma de su mano. ¿Qué objeto eligieron para esta primera experiencia y por qué?"</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Pair (Intercambio en Parejas) ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 9) En parejas, los estudiantes demuestran su objeto aumentado.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"En parejas. Muestren a su compañero el objeto aumentado. Expliquen qué objeto es y qué sintieron al verlo anclado en la realidad. El compañero observa y se prepara para compartir su impresión. Luego, intercambien roles."</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Share (Retroalimentación Estructurada) ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 10) El facilitador provee una estructura para que el feedback se centre en la experiencia del usuario.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Para dar feedback, usen esta estructura: <strong>1. 'Lo que más me impresionó al ver tu objeto fue...' 2. 'Una pregunta que tengo sobre cómo lo configuraste es...' 3. 'Una idea para interactuar con este objeto sería...'</strong>"</p>
-                            </div>
-                        </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 4: Síntesis y Cierre ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 11) El facilitador concluye la sesión, consolidando la comprensión de la AR como tecnología de IA.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Han abierto una puerta a un nuevo universo de posibilidades. Entienden que la AR no es magia, sino una aplicación sofisticada de Visión por Computadora e IA. En la próxima sesión, usaremos esta tecnología no solo para mostrar objetos, sino para contar historias. Buen trabajo."</p>
-                            </div>
-                        </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-
     <script src="script.js"></script>
 </body>
-</html>
+</html></html>
